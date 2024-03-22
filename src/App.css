@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(24, 36, 70);
+  color: rgb(229, 229, 229);
+  font-family: sans-serif;
 }
+ .content {
+  margin: 100px auto;
+  padding: 30px 0;
+  border: 1px solid black;
+  box-shadow: black 0px 0px 10px 1px;
+  background-color: rgb(19, 29, 54);
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .balance {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.balance h3 {
+  font-size: 1.3rem;
+}
+
+.balance p {
+  padding: 7px;
+  font-size: 19px;
+}
+
+.incomeContent {
+  margin-top: 5px;
+  display: grid;
+  width: 250px;
+  height: 60px;
+  grid-template-columns: 125px 125px;
+  box-shadow: black 0px 0px 5px 1px ;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.income {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: rgb(43, 43, 43);
+  border-radius: 5px 0 0 5px;
+}
+.income p {
+  margin-top: 2px;
+  color: rgb(0, 136, 0);
+}
+.expense {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 43, 43);
+  border-radius: 0 5px 5px 0;
+}
+.expense p {
+  margin-top: 2px;
+  color: rgb(208, 0, 0);
+}
+
+.section {
+  margin: 20px;
+  background-color: rgba(12, 18, 34, 0.836);
+  width: 500px;
+  height: 3px;
+}
+/* .history {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px white solid;
+  width: 200px;
+} */
+
+.transaction {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.transaction p {
+  margin: 5px 25px;
+  padding: 10px 0 2px;
+
+
+}
+.transaction input {
   color: white;
+  margin: 0px auto;
+  width: fit-content;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 10px;
+  font-size: .9rem;
+  background-color: rgb(12, 18, 34);
+  
+  
+}
+.transaction input:focus, input:focus {
+  outline: none;
+  
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  margin: 20px auto;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  background-color: rgb(213, 213, 213);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
